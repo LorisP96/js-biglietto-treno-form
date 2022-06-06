@@ -1,3 +1,5 @@
+// BOTTONE GENERA
+
 const genButton = document.getElementById('genera');
 
 genButton.addEventListener('click',
@@ -13,9 +15,20 @@ genButton.addEventListener('click',
         let discount = 0
 
         if(userAge === 'minorenne') {
+
             discount = userPrice * 20 / 100;
+
+            document.getElementById('user-offer').innerHTML = `Biglietto scontato del 20%`;
+
         } else if(userAge === 'over') {
+
             discount = userPrice * 40 / 100;
+
+            document.getElementById('user-offer').innerHTML = `Biglietto scontato del 40%`;
+
+        } else {
+
+            document.getElementById('user-offer').innerHTML = `Biglietto standard`;
         }
 
         let finalPrice = userPrice - discount;
@@ -26,15 +39,28 @@ genButton.addEventListener('click',
 
         document.getElementById('user-name-result').innerHTML = userName;
 
-        document.getElementById('user-price-result').innerHTML = `Il prezzo del tuo biglietto è ${humanPrice} €`;         
+        document.getElementById('user-price-result').innerHTML = `${humanPrice} €`; 
+        
+        document.getElementById('user-cab').innerHTML = Math.floor(Math.random() * 10);
+
+        document.getElementById('user-cp').innerHTML = Math.floor(Math.random() * 100000);
     }
 );
+
+// BOTTONE ANNULLA
 
 const annButton = document.getElementById('annulla');
 
 annButton.addEventListener('click',
     function() {
         document.querySelector('.hidden').classList.remove('active');
+
+        document.getElementById('user-name').value = '';
+
+        document.getElementById('user-km').value = '';
+
+        document.getElementById('user-age').value = 'maggiorenne';
+
     }
 );
 
