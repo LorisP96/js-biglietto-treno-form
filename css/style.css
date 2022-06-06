@@ -1,9 +1,14 @@
 body {
     background-color: rgb(173, 0, 61);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .hidden {
@@ -14,7 +19,7 @@ body {
     display: block;
 }
 
-.hidden > .container {
+.container-small {
     display: flex;
     height: 200px;
 }
@@ -62,4 +67,12 @@ button {
 h2 {
     text-align: center;
     color: white;
+}
+
+button {
+    background-color: white;
+}
+
+#genera {
+    border-color: gold;
 }

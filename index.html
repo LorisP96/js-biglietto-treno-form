@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- USER FORM -->
     <section>
         <div>
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
@@ -43,36 +44,38 @@
         </div>
     </section>
 
+    <!-- USER RESULT -->
     <section class="hidden">
         <div>
             <h2>IL TUO BIGLIETTO</h2>
         </div>
 
-        <h3>DETTAGLIO PASSEGGERI</h3>
-
         <div class="container">
-            <div class="user-name-box">
-                <div>NOME PASSEGGERO</div>
-                <div id="user-name-result"></div>
+
+            <h3>DETTAGLIO PASSEGGERI</h3>
+
+            <div class="container-small">
+                <div class="user-name-box">
+                    <div>NOME PASSEGGERO</div>
+                    <div id="user-name-result"></div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                        <tr>
+                            <td><div id="user-offer"></div></td>
+                            <td><div id="user-cab"></div></td>
+                            <td><div id="user-cp"></div></td>
+                            <td><div id="user-price-result"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Offerta</th>
-                        <th>Carrozza</th>
-                        <th>Codice CP</th>
-                        <th>Costo biglietto</th>
-                    </tr>
-                    <tr>
-                        <td><div id="user-offer"></div></td>
-                        <td><div id="user-cab"></div></td>
-                        <td><div id="user-cp"></div></td>
-                        <td><div id="user-price-result"></div></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            
         </div>
     </section>
 
